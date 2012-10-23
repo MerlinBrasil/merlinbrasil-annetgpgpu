@@ -237,7 +237,7 @@ F2DArray BPLayer::ExpBiasEdgesOut() const {
 void BPLayer::ImpBiasEdgesOut(const F2DArray &mat) const {
 	unsigned int iWidth 	= m_pBiasNeuron->GetConsO().size();
 
-	assert(iWidth == mat.getW() );
+	assert(iWidth == mat.GetW() );
 
 	for(int x = 0; x < static_cast<int>(iWidth); x++) {
 		//std::cout<<"mat: "<<mat[0][x]<<std::endl;
